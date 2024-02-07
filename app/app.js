@@ -20,10 +20,10 @@ const express = require('express');
 const app = express();
 
 //routing
-const home = require('./routes/home/index.js');
+const home = require('./src/routes/home/index.js');
 
 //app setting
-app.set("views", "./views"); //위치 지정
+app.set("views", "./src/views"); //위치 지정
 app.set("view engine", "ejs");
 
 app.use('/', home); //미들 웨어를 등록해주는 메소드
